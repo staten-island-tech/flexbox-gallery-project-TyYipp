@@ -19,6 +19,7 @@ html,
     border-radius: 10px;
     align-items: center;
     padding: 20px;
+    text-align: center;
 
 
 
@@ -26,22 +27,42 @@ html,
 }
 .child{
     border: 1px solid lightblue;
-    background-color: orange;
-    width: 200px;
-    height: 200px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
     margin-top: 10rem auto;
     box-shadow: 40px 40px 50px cyan;
+    transition: transform .7s ease-in-out;
+   
 }
+
 .img{
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     height: 198px;
     width: 198px;
     object-fit: cover;
+    transition: transform .7s ease-in-out;
 }
+.img1:hover {
+    transform: rotate(360deg);
+}
+.img2:hover {
+    transform: scale(1.5,1.5) ;
+}
+.img3:hover {
+    transform: scaleX(-1);
+}
+
 .text{
-    background-color: lightblue;
+    background-color: transparent;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
+    transition: transform .7s ease-in-out;
+    opacity: 1;
+}
+.text:hover {
+    opacity: .7
 }
