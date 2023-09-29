@@ -45,14 +45,60 @@ html,
     object-fit: cover;
     transition: transform .7s ease-in-out;
 }
-.img1:hover {
+.img-1:hover {
     transform: rotate(360deg);
 }
-.img2:hover {
+.img-2:hover {
+    transform: rotate(360deg);
+}
+.img-3:hover {
     transform: scale(1.5,1.5) ;
 }
-.img3:hover {
+.img-4:hover {
+    transform: scale(1.5,1.5) ;
+}
+.img-5:hover {
     transform: scaleX(-1);
+}
+.img-6:hover {
+    transform: scaleX(-1);
+}
+.img-7:hover {
+    transform: rotate(180deg);
+}
+.img-8:hover {
+    transform: rotate(180deg);
+}
+.img-9:hover {
+    transform: skew(180deg);
+}
+.img-10:hover {
+    transform: skew(180deg);
+}
+.img-11:hover {
+    animation: rattle;
+    animation-duration: 2s;
+}
+.img-12:hover {
+    animation: rattle;
+    animation-duration: 2s;
+}
+@keyframes rattle {
+20% {
+    transform: translate(3px) rotate(2deg)
+}
+40% {
+    transform: translate(-3px) rotate(-2deg)
+}
+60% {
+    transform: translate(2px) rotate(1deg)
+}
+80% {
+    transform: translate(-2px) rotate(-1deg)
+}
+100% {
+    transform: translate(1px) rotate(0deg)
+}
 }
 
 .text{
@@ -65,4 +111,11 @@ html,
 }
 .text:hover {
     opacity: .7
+}
+
+
+@media screen and (max-width: 813px) {
+    menu-item {
+        width: 100%;
+    }
 }
