@@ -117,5 +117,6 @@ html,
 @media screen and (max-width: 813px) {
     menu-item {
         width: 100%;
+       
     }
 }
